@@ -67,3 +67,14 @@ int turnMotor(std::string name, float targetRotation) {  //moves motor to target
     }
     return -1; //error
 }
+
+void turnAllMotors() {
+    turnMotor("joint1", jointGetTargetRotation("joint1"));
+    turnMotor("joint2", jointGetTargetRotation("joint2"));
+    turnMotor("joint3", jointGetTargetRotation("joint3"));
+    turnMotor("joint4", jointGetTargetRotation("joint4"));
+    turnMotor("joint5", jointGetTargetRotation("joint5"));
+    turnMotor("joint6", jointGetTargetRotation("joint6"));
+    /* turnMotor("joint7", jointGetRotation("joint7"));
+    turnMotor("joint8", jointGetRotation("joint8")); */
+}

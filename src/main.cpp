@@ -42,32 +42,16 @@ void setup() {  //Arduino setup.
   Serial.begin(9600);
 
   jointInit("joint1", 1, joint1_pinStep, joint1_pinDir, DFLT_TOTALSTEP, DFLT_STARTINGROTATION, DFLT_MINROTATION, DFLT_MAXROTATION, DFLT_ROTATIONTYPE, DFLT_DEADBAND, DFLT_MAXSTEPPING);
-  delay(100);
   jointInit("joint2", 2, joint2_pinStep, joint2_pinDir, DFLT_TOTALSTEP, DFLT_STARTINGROTATION, DFLT_MINROTATION, DFLT_MAXROTATION, DFLT_ROTATIONTYPE, DFLT_DEADBAND, DFLT_MAXSTEPPING);
-  delay(100);
   jointInit("joint3", 3, joint3_pinStep, joint3_pinDir, DFLT_TOTALSTEP, DFLT_STARTINGROTATION, DFLT_MINROTATION, DFLT_MAXROTATION, DFLT_ROTATIONTYPE, DFLT_DEADBAND, DFLT_MAXSTEPPING);
-  delay(100);
   jointInit("joint4", 4, joint4_pinStep, joint4_pinDir, DFLT_TOTALSTEP, DFLT_STARTINGROTATION, DFLT_MINROTATION, DFLT_MAXROTATION, DFLT_ROTATIONTYPE, DFLT_DEADBAND, DFLT_MAXSTEPPING);
-  delay(100);
   jointInit("joint5", 5, joint5_pinStep, joint5_pinDir, DFLT_TOTALSTEP, DFLT_STARTINGROTATION, DFLT_MINROTATION, 10*DFLT_MAXROTATION, DFLT_ROTATIONTYPE, DFLT_DEADBAND, DFLT_MAXSTEPPING);
-  delay(100);
   jointInit("joint6", 6, joint6_pinStep, joint6_pinDir, DFLT_TOTALSTEP, DFLT_STARTINGROTATION, DFLT_MINROTATION, DFLT_MAXROTATION, DFLT_ROTATIONTYPE, DFLT_DEADBAND, DFLT_MAXSTEPPING);
-  delay(100);
   jointInit("joint7", 7, joint7_pinStep, joint7_pinDir, DFLT_TOTALSTEP, DFLT_STARTINGROTATION, DFLT_MINROTATION, DFLT_MAXROTATION, DFLT_ROTATIONTYPE, DFLT_DEADBAND, DFLT_MAXSTEPPING);
-  delay(100);
   jointInit("joint8", 8, joint8_pinStep, joint8_pinDir, DFLT_TOTALSTEP, DFLT_STARTINGROTATION, DFLT_MINROTATION, DFLT_MAXROTATION, DFLT_ROTATIONTYPE, DFLT_DEADBAND, DFLT_MAXSTEPPING);
-  delay(100);
 }
 
 void loop() {  //Arduino loop.
   usePotRotations();
-
-  turnMotor("joint1", jointGetTargetRotation("joint1"));
-  turnMotor("joint2", jointGetTargetRotation("joint2"));
-  turnMotor("joint3", jointGetTargetRotation("joint3"));
-  turnMotor("joint4", jointGetTargetRotation("joint4"));
-  turnMotor("joint5", jointGetTargetRotation("joint5"));
-  turnMotor("joint6", jointGetTargetRotation("joint6"));
-  /* turnMotor("joint7", jointGetRotation("joint7"));
-  turnMotor("joint8", jointGetRotation("joint8")); */
+  turnAllMotors();
 }

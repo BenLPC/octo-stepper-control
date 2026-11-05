@@ -3,5 +3,6 @@
 #define OSC_MOTOR_H
 
 int turnMotor(std::string name, float targetRotation);
+void turnAllMotors();
 
 #endif
