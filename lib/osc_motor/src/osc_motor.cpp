@@ -1,7 +1,7 @@
-#include "osc_motor.h"
+#include "osc_motor.hpp"
 #include <Arduino.h>
-#include <osc_joint.h>
-#include <osc_position.h>
+#include <osc_joint.hpp>
+#include <osc_position.hpp>
 #include <string>
 
 int turnMotor(std::string name, float targetRotation) {  //moves motor to target rotation. Returns 1 for success, 2 for progress and -1 for error.

@@ -1,7 +1,7 @@
-#include "osc_joint.h"
+#include "osc_joint.hpp"
 #include <Arduino.h>
-#include <osc_rotation.h>
-#include <osc_position.h>
+#include <osc_rotation.hpp>
+#include <osc_position.hpp>
 #include <unordered_map>
 #include <string>
 

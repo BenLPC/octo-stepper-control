@@ -1,4 +1,4 @@
-#include "osc_position.h"
+#include "osc_position.hpp"
 #include <Arduino.h>
 #include <math.h>
 

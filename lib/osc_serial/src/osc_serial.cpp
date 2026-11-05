@@ -1,7 +1,7 @@
-#include "osc_serial.h"
+#include "osc_serial.hpp"
 #include <Arduino.h>
 #include <string>
-#include <osc_joint.h>
+#include <osc_joint.hpp>
 
 int* getPotArray() {
     int newData = false;

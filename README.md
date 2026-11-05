@@ -10,3 +10,4 @@
 
 - The main controller program can still drive steppers without potentiometers, although there is currently no way to provide ongoing control without the pots. A web application would fix this in newer versions.
 - The accompanying osc-stepper-remote code needs adjusting to take full advantage of eight potentiometers.
+- Need to rework language around angular displacement/position and libraries to be more accurate.

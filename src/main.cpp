@@ -1,5 +1,5 @@
 #include <Arduino.h>
-#include <osc_lib.h>
+#include <osc_lib.hpp>
 
 
 //defaults for ROTATIONTYPE, TOTALSTEP, STEPPOSITION, MINROTATION, MAXROTATION. Used if .init() function isn't called.
