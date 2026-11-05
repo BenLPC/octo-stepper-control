@@ -4,7 +4,7 @@
 
 ### latest changelog (1.0.1)
 
-- rewrote codebase to be modular rather than one monolithic v
+- rewrote codebase to be modular rather than one monolithic file
 
 ### notes
 
